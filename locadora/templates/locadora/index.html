@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>index</title>
+</head>
+<style>
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    a {
+            margin: 10px;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 4px;
+        }
+</style>
+
+<body>
+
+    <h2>Kadson Kauã</h2>
+    <div>
+        <h4>Está é uma locadora</h4>
+        <p class="lead">Aqui você poderá alugar qualquer filme disponível em nosso site.</p>
+        <p class="lead">Clique nos links abaixo para ser encaminhado para a lista de filmes ou de locações</p>
+        <table class="table row">
+            <tbody>
+
+                <tr>
+                    <td>
+                        <a href="{% url 'filmes' %}" class="btn btn-primary">Filmes</a>
+                    </td>
+                    <td>
+                        <a href="{% url 'locacao' %}" class="btn btn-primary">Locações</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
